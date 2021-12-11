@@ -1,0 +1,427 @@
+<head>
+    <meta charset="utf-8">
+    <title>HTML Cheat Sheet</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<nav id="navbar">
+    <header>Table of Contents</header>
+    <ul>
+        <li><a class="nav-link" href="#HTML_Cheat_Sheet">HTML Cheat Sheet</a></li>
+        <li><a class="nav-link" href="#Document_Summary">Document Summary</a></li>
+        <li><a class="nav-link" href="#Document_Information">Document Information</a></li>
+        <li><a class="nav-link" href="#Document_Structure">Document Structure</a></li>
+        <li><a class="nav-link" href="#Text_Formatting">Text Formatting</a></li>
+        <li><a class="nav-link" href="#Links">Links</a></li>
+        <li><a class="nav-link" href="#Images">Images</a></li>
+        <li><a class="nav-link" href="#Lists">Lists</a></li>
+        <li><a class="nav-link" href="#Forms">Forms</a></li>
+        <li><a class="nav-link" href="#Input_Type_Attributes">Input Type Attributes</a></li>
+        <li><a class="nav-link" href="#Option_Attributes">Option Attributes</a></li>
+        <li><a class="nav-link" href="#Tables">Tables</a></li>
+        <li><a class="nav-link" href="#Objects_and_iFrames">Objects and iFrames</a></li>
+        <li><a class="nav-link" href="#iFrame_Attributes">iFrame Attributes</a></li>
+        <li><a class="nav-link" href="#Embed_Attributes">Embed Attributes</a></li>
+        <li><a class="nav-link" href="#HTML_Entities">HTML Entities</a></li>
+        <li><a class="nav-link" href="#HTML5_Semantic_Tags">HTML5 Semantic Tags</a></li>
+    </ul>
+</nav>
+<main id="main-doc">
+
+<section class="main-section" id="HTML_Cheat_Sheet">
+    <header>HTML Cheat Sheet</header>
+    <p>If you’re just getting started in HTML (or even if you’ve long since lost your novice status), there’s a good chance
+        that you’ve spent at least some time online searching for specific HTML elements. Hey, it’s nothing to be ashamed
+        of, and you’re certainly not alone — even the most proficient web developers have trouble remembering all the HTML
+        elements and have been known to quick tab over to Google and pop in a quick query to ensure that everything works
+        the way it’s supposed to.</p>
+    <p>After all, when it comes to coding, your goal is to be 100% accurate — you can’t rely on the computer to just get the
+        gist of what you want it to do. That means your HTML code has to be perfect or else it may not work.</p>
+    <p>But what if you didn’t have to ask Google? What if, instead, you had easy access to a list of common
+        elements, attributes, and HTML tags, ready to be dropped into your page at a moment’s notice?</p>
+    <p>We certainly think so. That’s why we’ve created this handy HTML cheat sheet.</p>
+</section>
+
+<section class="main-section" id="Document_Summary">
+    <header>Document Summary</header>
+    <p><code>&lt;html&gt; … &lt;/html&gt;</code></p>
+    <p>This tag is added at the very beginning and the very end of your HTML document. This is known as the root element and
+        indicates that the page is written in HTML. All of the rest of the page markup will occur between these two tags,
+        making the root element tag a parent tag for all other tags.</p>
+    <p><code>&lt;head&gt; … &lt;/head&gt;</code></p>
+    <p>This tag allows you to include information about the page, such as title tags, metadata, fonts, and links to scripts
+        and styles.</p>
+    <p><code>&lt;title&gt; … &lt;/title&gt;</code></p>
+    <p>This tag allows you to specify a title for your page. This is important, as it not only shows up in the browser’s
+        title bar and gives users a clearer idea of the topic of your page but also allows search engines to scan and index
+        the page.</p>
+    <p><code>&lt;body&gt; … &lt;/body&gt;</code></p>
+    <p>This tag encompasses all of the user-facing content on your page. </p>
+</section>
+
+<section class="main-section" id="Document_Information">
+    <header>Document Information</header>
+    <p><code>&lt;base/&gt;</code>This tag is used to indicate your page’s base URL (example: “<a
+            href="https://github.com/">https://github.com/</a>”) and allows you to specify all
+        relative links in your document, for cleaner internal linking throughout your site.</p>
+    <p><code>&lt;meta/&gt;<br></code>This tag allows you to include metadata for your page, such as author, publish date,
+        important keywords, content descriptions, and other information. <br><br><code>&lt;link/&gt;<br></code>This tag
+        makes it possible to link to scripts that are external to your webpage and is often used for including stylesheets.</p>
+    <p><code>&lt;style&gt; … &lt;/style&gt; </code></p>
+    <p>This tag includes document style information. It can be used as an alternative to an external style sheet. Unless
+        otherwise specified, it will default to CSS.</p>
+    <p><code>&lt;script&gt; … &lt;/script&gt;</code></p>
+    <p>This tag allows you to include scripting information as well as links to external scripts. You can also add code
+        snippets to make the web page more dynamic.</p>
+</section>
+
+<section class="main-section" id="Document_Structure">
+<header>Document Structure</header>
+    <p><code>&lt;h1..h6&gt; … &lt;/h1..h6&gt; </code></p>
+    <p>This tag allows you to designate heading levels, with &lt;h1&gt; being the most important and having the largest font
+        size, and &lt;h6&gt; being the least important and having the smallest font size. These elements help break up
+        content on the page.</p>
+        <strong>A few things to note about header tags:</strong>
+        <ul>
+ 	    <li>It&#x27;s generally considered best practices to include only one H1 tag (this is important for SEO). 
+         Generally, WordPress themes use H1 tags for blog post headlines. Keep this in mind when formatting headings.</li>
+ 	    <li>You&#x27;ll likely use multiple H2, H3, etc. tags per post.</li>
+ 	    <li>It&#x27;s okay if you use heading tags &quot;out of order&quot; (ex: your H2 is lower on the page than an H3).</li>
+        </ul>
+    <p><code>&lt;div&gt; … &lt;/div&gt;</code></p>
+    <p>This tag allows you to divide the page content into individual blocks.
+        <br><br><code>&lt;span&gt; … &lt;/span&gt;</code></p>
+    <p>This tag allows you to include inline elements (icons, images, etc.) without affecting the rest of the page’s
+        formatting/styling. </p>
+    <p><code>&lt;p&gt; … &lt;/p&gt;</code></p>
+    <p>This tag indicates that the text within is plain text. </p>
+    <p><code>&lt;br/&gt;</code></p>
+    <p>This tag creates a line break within text, for when you need to drop down to a new line, such as when writing an
+        address.</p>
+    <p><code>&lt;hr/&gt;</code></p>
+    <p>This tag also creates a line break in the text but additionally adds a horizontal line indicating the end of the
+        previous section.</p>
+</section>
+<section class="main-section" id="Text_Formatting">
+    <header>Text Formatting</header>
+    <p><code>&lt;strong&gt; … &lt;/strong&gt;</code></p>
+    <p><code>&lt;b&gt; … &lt;/b&gt;</code></p>
+    <p>Use either of these tags to bold text.</p>
+    <p><code>&lt;em&gt; … &lt;/em&gt;</code></p>
+    <p><code>&lt;i&gt; … &lt;/i&gt;</code></p>
+    <p>Use either of these tags to italicize text.</p>
+    <p><code>&lt;tt&gt; … &lt;/tt&gt; </code></p>
+    <p>This tag is no longer supported in HTML5. It was used to create fixed width text.</p>
+    <p><code>&lt;strike&gt; … &lt;/strike&gt;</code></p>
+    <p>This tag is used to create strikethrough text (words with a line through them). This tag is generally no longer
+        supported. </p>
+    <p><code>&lt;cite&gt; … &lt;/cite&gt;</code></p>
+    <p>This tag allows you to cite references, such as when using quotes.</p>
+    <p><code>&lt;pre&gt; … &lt;/pre&gt;</code></p>
+    <p>This tag is used to create preformatted, monospace text that keeps whitespace inside the element intact.</p>
+    <p><code>&lt;del&gt; … &lt;/del&gt; </code></p>
+    <p>This tag indicates that a section of text was previously deleted from the document.</p>
+    <p><code>&lt;ins&gt; … &lt;/ins&gt; </code></p>
+    <p>This tag indicates that a section of text has been inserted into the document.</p>
+    <p><code>&lt;blockquote&gt; … &lt;/blockquote&gt;</code></p>
+    <p>This tag indicates a longer quote (usually longer than three lines), and is often used along with the &lt;cite&gt;
+        tag.</p>
+    <p><code>&lt;q&gt; … &lt;/q&gt;</code></p>
+    <p>This tag is used for shorter quotations (usually shorter than three lines), and is often used along with the
+        &lt;cite&gt; tag.</p>
+    <p><code>&lt;abbr&gt; … &lt;/abbr&gt;</code></p>
+    <p>This tag is used to indicate abbreviations, along with the full forms.</p>
+    <p><code>&lt;acronym&gt; … &lt;/acronym&gt;</code></p>
+    <p>This tag is no longer supported in HTML5. It is used to indicate an acronym. </p>
+    <p><code>&lt;address&gt; … &lt;/address&gt;</code></p>
+    <p>This tag is used to indicate author contact details.<br><br><code>&lt;dfn&gt; … &lt;/dfn&gt;</code></p>
+    <p>This tag is used to create an inline definition within the body of the text.</p>
+    <p><code>&lt;code&gt; … &lt;/code&gt; </code></p>
+    <p>This tag allows you to display code snippets within the body of the text.</p>
+    <p><code>&lt;sub&gt; … &lt;/sub&gt;</code></p>
+    <p>This tag allows you to create a subscript. </p>
+    <p><code>&lt;sup&gt; … &lt;/sup&gt;</code></p>
+    <p>This tag allows you to create a superscript.</p>
+    <p><code>&lt;small&gt; … &lt;/small&gt;</code></p>
+    <p>This tag allows you to create text of reduced size. In HTML5, it also may refer to invalid, irrelevant, or inaccurate
+        information.</p>
+    <p><code>&lt;bdo&gt; … &lt;/bdo&gt; </code></p>
+    <p>This tag is used to identify which text should be read opposite from the text preceding it.</p>
+</section>
+
+<section class="main-section" id="Links">
+    <header>Links</header>
+    <p><code>&lt;a href=””&gt; … &lt;/a&gt; </code></p>
+    <p>This tag indicates anchor text for a hyperlink.</p>
+    <p><code>&lt;a href=”mailto:”&gt; … &lt;/a&gt;</code></p>
+    <p>This tag indicates a link used for sending emails.</p>
+    <p><code>&lt;a href=”tel://###-###”&gt; … &lt;/a&gt;</code></p>
+    <p>This tag allows you to create clickable links to telephone numbers (indicated here by the # symbols).</p>
+    <p><code>&lt;a name=”name”&gt; … &lt;/a&gt;</code></p>
+    <p>This tag allows for fast navigation around the webpage itself, taking users to specific document elements. </p>
+    <p><code>&lt;a href=”#name”&gt; … &lt;/a&gt;</code></p>
+    <p>This tag allows for fast navigation around the webpage itself, taking users to specific div elements.</p>
+    <strong>How To Build A Table Of Contents In HTML:</strong>
+        <ol>
+         <li>Create a list in the section where you would normally add your text.</li>
+         <li>Make each list item a link.</li>
+         <li>Add links between each section in your post back to its respective table of contents position.</li>
+        </ol>  
+</section>   
+
+<section class="main-section" id="Images">
+    <header>Images</header>
+    <p><code>&lt;img /&gt;</code></p>
+    <p>This tag allows you to display image files in the webpage. </p>
+    <p><code>src=”url”</code></p>
+    <p>This allows you to designate the source URL of an image, indicating where the file is located (either locally or
+        online).</p>
+    <p><code>alt=”text”</code></p>
+    <p>This allows you to specify fallback text used if the image doesn’t load. </p>
+    <p><code>height=””</code></p>
+    <p>This specifies the height of the image, either in pixels or percentages.</p>
+    <p><code>width=””</code></p>
+    <p>This specifies the width of the image, either in pixels or percentages.</p>
+    <p><code>align=””</code></p>
+    <p>This indicates the relative alignment of the image, allowing it to shift in accordance with changes to other page
+        elements. </p>
+    <p><code>border=””</code></p>
+    <p>This allows you to set the border thickness of an image. It defaults to zero (0) if the tag is not included.</p>
+    <p><code>&lt;map&gt; … &lt;/map&gt; </code> </p>
+    <p>This allows you to include an interactive image with areas that can be clicked on.</p>
+    <p><code>&lt;map name=””&gt; … &lt;/map&gt; </code></p>
+    <p>Use this to denote the name of the map associated between the image and the map. </p>
+    <p><code>&lt;area /&gt;</code></p>
+    <p>This is used to specify the image map area.</p>
+    <p><code>shape=””</code></p>
+    <p>Use this tag to denote the shape of the interactive map area. </p>
+    <p><code>coords=””</code></p>
+    <p>Use this to designate the coordinates of the vital information of the shape, such as vertices for rectangles, or
+        center/radius for circles.</p>
+</section>
+
+<section class="main-section" id="Lists">
+    <header>Lists</header>
+    <p><code>&lt;ol&gt; … &lt;/ol&gt;</code></p>
+    <p>This tag allows you to designate ordered (numbered) lists.</p>
+    <p><code>&lt;ul&gt; … &lt;/ul&gt; </code></p>
+    <p>This tag allows you to create unordered (bulleted) lists. </p>
+    <p><code>&lt;li&gt; … &lt;/li&gt; </code></p>
+    <p>This tag allows you to specify each list item to be bulleted or numbered.</p>
+    <p><code>&lt;dl&gt; … &lt;/dl&gt;</code></p>
+    <p>This tag is reserved for list items definitions.</p>
+    <p><code>&lt;dt&gt; … &lt;/dt&gt; </code></p>
+    <p>This tag lets you set the definition of a single term inline with body content.</p>
+    <p><code>&lt;dd&gt; … &lt;/dd&gt;</code></p>
+    <p>Use this tag to set the description for a defined term.</p>
+</section>
+
+<section class="main-section" id="Forms">
+    <header>Forms</header>
+    <p><code>&lt;form&gt; … &lt;/form&gt; </code></p>
+    <p>This element is the parent tag for an HTML form, spelling out how the form will operate.</p>
+    <p><code>action=”url”</code></p>
+    <p>Use this attribute to specify the URL where the data will be sent once the form has been submitted.</p>
+    <p><code>method=””</code>This specifies the method, either POST or GET, that will be used to submit the
+        form. </p>
+    <p><code>enctype=””</code></p>
+    <p>This attribute dictates how the form data is to be encoded (used only for POST method).</p>
+    <p><code>autocomplete </code></p>
+    <p>This dictates whether the form will have autocomplete on or off.</p>
+    <p><code>novalidate </code></p>
+    <p>Use this to indicate that the form will not be validated upon submission.</p>
+    <p><code>accept-charsets </code></p>
+    <p>This determines the character coding upon form submission. </p>
+    <p><code>target</code></p>
+    <p>This designates where to display the form response upon form submission (generally has one of the following
+        values:  _blank, _self, _parent, _top.</p>
+    <p><code>&lt;fieldset&gt; … &lt;/fieldset&gt; </code></p>
+    <p>This tag identifies the group of all fields on the form.</p>
+    <p><code>&lt;label&gt; … &lt;/label&gt;</code></p>
+    <p>This tag can be used to tell the user what to enter in each field. </p>
+    <p><code>&lt;legend&gt; … &lt;/legend&gt;</code></p>
+    <p>This tag acts as a caption for the &lt;fieldset&gt; element.</p>
+    <p><code>&lt;input /&gt; </code></p>
+    <p>This tag is used to take input from the user, with input type being determined by a number of attributes.</p>
+</section>
+
+<section class="main-section" id="Input_Type_Attributes">
+    <header>Input Type Attributes</header>
+    <p><code>type=””</code></p>
+    <p>Use this attribute to specify which type of input is being requested from the user.</p>
+    <p><code>name=””</code></p>
+    <p>This allows you to specify the name of the input field.</p>
+    <p><code>value=””</code></p>
+    <p>This attribute describes the value/input-field information.</p>
+    <p><code>size=””</code></p>
+    <p>This attribute specifies the &lt;input&gt; element width using number of characters.</p>
+    <p><code>maxlength=””</code></p>
+    <p>Use this attribute to designate the maximum number of input characters allowed. </p>
+    <p><code>required</code></p>
+    <p>The attribute allows you to designate which input fields are required, meaning that the form cannot be submitted
+        unless the field is filled.</p>
+    <p><code>width=””</code></p>
+    <p>This attribute specifies the &lt;input&gt; element width using pixel values.</p>
+    <p><code>height=””</code></p>
+    <p>This attribute specifies the &lt;input&gt; element height using pixel values.</p>
+    <p><code>placeholder=””</code></p>
+    <p>Use this attribute to provide an example of what the &lt;input&gt; element value might be. </p>
+    <p><code>pattern=””</code></p>
+    <p>This attribute can be used to look for patterns in user text. The &lt;input&gt; element is checked against this
+        expression to ensure that the user has entered the correct information.</p>
+    <p><code>min=””</code></p>
+    <p>This allows you to set the minimum value for the &lt;input&gt; element. </p>
+    <p><code>max=””</code></p>
+    <p>This allows you to set the maximum value for the &lt;input&gt; element.</p>
+    <p><code>autofocus</code></p>
+    <p>This attribute forces focus on the &lt;input&gt; element once the webpage has finished loading.</p>
+    <p><code>disabled</code></p>
+    <p>This attribute disables the &lt;input&gt; element.</p>
+    <p><code>&lt;textarea&gt; … &lt;/textarea&gt;</code></p>
+    <p>This tag can be used to designate areas where longer strings of input (multi-sentence) will be allowed.</p>
+    <p><code>&lt;select&gt; … &lt;/select&gt;</code></p>
+    <p>This tag creates a list of options which the user can choose from.</p>
+    <p><code>multiple</code></p>
+    <p>This tag makes it possible for users to select multiple options at the same time. </p>
+</section>
+
+<section class="main-section" id="Option_Attributes">
+    <header>Option Attributes</header>
+    <p><code>value=””</code></p>
+    <p>This attribute allows you to designate what text will be visible to the user for any specific option.</p>
+    <p><code>selected</code></p>
+    <p>This attribute determines which option is selected by default when the form loads.</p>
+    <p><code>&lt;button&gt; … &lt;/button&gt;</code></p>
+    <p>Use this tag when creating a button for form submission.</p>
+</section>
+
+<section class="main-section" id="Tables">
+    <header>Tables</header>
+    <p><code>&lt;table&gt; … &lt;/table&gt; </code></p>
+    <p>This tag is used to designate a table in a webpage.</p>
+    <p><code>&lt;caption&gt; … &lt;/caption&gt;</code></p>
+    <p>Use this tag to add a description for the table.</p>
+    <p><code>&lt;thead&gt; … &lt;/thead&gt;</code></p>
+    <p>This tag contains the data/information that will go into the table.</p>
+    <p><code>&lt;tfoot&gt; … &lt;/tfoot&gt; </code></p>
+    <p>Use this tag to designate the footer of the table.</p>
+    <p><code>&lt;tr&gt; … &lt;/tr&gt;</code></p>
+    <p>This tag contains the data/information to be included in a single row of the table.</p>
+    <p><code>&lt;th&gt; … &lt;/th&gt;</code></p>
+    <p>This tag contains the data/information to be included in a single header item.</p>
+    <p><code>&lt;td&gt; … &lt;/td&gt;</code></p>
+    <p>This tag contains the data/information to be included in a single cell of the table.</p>
+    <p><code>&lt;colgroup&gt; … &lt;/colgroup&gt;</code></p>
+    <p>Use this tag to group one or more columns for formatting purposes.</p>
+    <p><code>&lt;col /&gt; </code></p>
+    <p>This tag defines a single column of data/information within the table.</p>
+</section>
+
+<section class="main-section" id="Objects_and_iFrames">
+    <header>Objects and iFrames</header>
+    <p><code>&lt;object&gt; … &lt;/object&gt; </code></p>
+    <p>This tag is used to embed multimedia into a webpage. This can include video, audio, PDFs, or others.</p>
+    <p><code>height=””</code></p>
+    <p>This attribute specifies the &lt;object&gt; element height using pixel values.</p>
+    <p><code>width=””</code></p>
+    <p>This attribute specifies the &lt;object&gt; element width using pixel values.</p>
+    <p><code>type=””</code></p>
+    <p>Use this attribute to designate the type/format of the object’s contents.</p>
+    <p><code>&lt;iframe&gt; … &lt;/iframe&gt;</code></p>
+    <p>This tag allows you to create an inline frame that lets you embed external multimedia content into an existing
+        document. This frame floats within the webpage relative to other webpage items.</p>
+</section>
+
+<section class="main-section" id="iFrame_Attributes">
+    <header>iFrame Attributes</header>
+    <p><code>name=””</code></p>
+    <p>This attribute allows you to create a name for the &lt;iframe&gt;.</p>
+    <p><code>src=””</code></p>
+    <p>This attribute designates the source URL/path of the multimedia object held inside the &lt;iframe&gt;.</p>
+    <p><code>srcdoc=””</code></p>
+    <p>This attribute designates the HTML content to be displayed inside the &lt;iframe&gt;.</p>
+    <p><code>height=””</code></p>
+    <p>This attribute determines the height of the &lt;iframe&gt;.</p>
+    <p><code>width=””</code></p>
+    <p>This attribute determines the width of the &lt;iframe&gt;.</p>
+    <p><code>&lt;param /&gt;</code></p>
+    <p>This tag allows you to further customize your iFrame content by appending extra parameters.</p>
+    <p><code>&lt;embed&gt; … &lt;/embed&gt;</code></p>
+    <p>This tag is used to embed external objects into the iFrame, such as flash videos.</p>
+</section>
+
+<section class="main-section" id="Embed_Attributes">
+    <header>Embed Attributes</header>
+    <p><code>height=””</code></p>
+    <p>This attribute determines the height of the embedded content you’re including.</p>
+    <p><code>width=””</code></p>
+    <p>This attribute determines the width of the embedded content.</p>
+    <p><code>src=””</code></p>
+    <p>This attribute designates the source URL/path of the external file you’re embedding.</p>
+    <p><code>type=””</code></p>
+    <p>Use this attribute to designate the media type of the embedded content.</p>
+</section>
+
+
+<section class="main-section" id="HTML_Entities">
+    <header>HTML Entities</header>
+    <p><code>&amp;#34; &amp;quot; </code><br>Quotation Marks - “</p>
+    <p><code>&amp;#38; &amp;amp; </code><br>Ampersand - &amp;</p>
+    <p><code>&amp;#60; &amp;lt; </code><br>Less than sign - &lt;</p>
+    <p><code>&amp;#62; &amp;gt; </code><br>Greater than sign - &gt;</p>
+    <p><code>&amp;#160; &amp;nbsp; </code><br>Non-breaking space</p>
+    <p><code>&amp;#169; &amp;copy; </code><br>Copyright symbol - ©</p>
+    <p><code>&amp;#64; &amp;Uuml; </code><br>@ Symbol - @</p>
+    <p><code>&amp;#149; &amp;ouml; </code></p>
+    <p>Small bullet - •</p>
+    <p><code>&amp;#153; &amp;ucirc; </code></p>
+    <p>Trademark symbol - ™</p>
+</section>    
+
+<section class="main-section" id="HTML5_Semantic_Tags">
+    <header>HTML5 Semantic Tags</header>
+    <p><code>&lt;header&gt; … &lt;/header&gt;</code></p>
+    <p>This tag defines the header block for a document or for an individual section.</p>
+    <p><code>&lt;footer&gt; … &lt;/footer&gt;</code></p>
+    <p>This tag identifies the footer block for the document or for an individual section.</p>
+    <p><code>&lt;main&gt; … &lt;/main&gt;</code></p>
+    <p>Use this tag to describe the main content of a document.</p>
+    <p><code>&lt;article&gt; … &lt;/article&gt;</code></p>
+    <p>This tag is used to identify an article inside a document.</p>
+    <p><code>&lt;aside&gt; … &lt;/aside&gt;</code></p>
+    <p>This tag specifies content contained in a document sidebar.</p>
+    <p><code>&lt;section&gt; … &lt;/section&gt;</code></p>
+    <p>Use this tag to create a section block in the document.</p>
+    <p><code>&lt;details&gt; … &lt;/details&gt;</code></p>
+    <p>This tag allows you to include additional facts or information that the user can then view or hide.</p>
+    <p><code>&lt;dialog&gt; … &lt;/dialog&gt;</code></p>
+    <p>Use this tag to create a dialog box or window.</p>
+    <p><code>&lt;figcaption&gt; … &lt;/figcaption&gt;</code></p>
+    <p>Use the &lt;figure&gt; element caption to describe the figure.</p>
+    <p><code>&lt;figure&gt; … &lt;/figure&gt;</code></p>
+    <p>This tag denotes an independent content block featuring diagrams, photos, illustrations, etc.</p>
+    <p><code>&lt;mark&gt; … &lt;/mark&gt;</code></p>
+    <p>This tag displays a portion of highlighted text on the page.</p>
+    <p><code>&lt;nav&gt; … &lt;/nav&gt;</code></p>
+    <p>This tag allows you to create navigation links within the document.</p>
+    <p><code>&lt;menuitem&gt; … &lt;/menuitem&gt;</code></p>
+    <p>Use this tag to designate a specific menu item that a user can raise from a popup menu.</p>
+    <p><code>&lt;meter&gt; … &lt;/meter&gt;</code></p>
+    <p>This tag describes the scalar measurement within a known array.</p>
+    <p><code>&lt;progress&gt; … &lt;/progress&gt;</code></p>
+    <p>This tag displays the progress of a task, usually within a progress bar.</p>
+    <p><code>&lt;rp&gt; … &lt;/rp&gt;</code></p>
+    <p>This tag displays text within browsers that do not support ruby annotations.</p>
+    <p><code>&lt;rt&gt; … &lt;/rt&gt;</code></p>
+    <p>This tag displays East Asian typography character details.</p>
+    <p><code>&lt;ruby&gt; … &lt;/ruby&gt;</code></p>
+    <p>Use this tag to describe a Ruby annotation for East Asian typography. </p>
+    <p><code>&lt;summary&gt; … &lt;/summary&gt;</code></p>
+    <p>This tag allows you to create a visible heading for a &lt;details&gt; element.</p>
+    <p><code>&lt;bdi&gt; … &lt;/bdi&gt;</code></p>
+    <p>This tag allows you to format part of text in a different direction from other text.</p>
+    <p><code>&lt;time&gt; … &lt;/time&gt;</code></p>
+    <p>Use this tag to identify the time and date.</p>
+    <p><code>&lt;wbr&gt;</code></p>
+    <p>This tag is used to create a line-break within the content.</p>
+</section>
+</main>
